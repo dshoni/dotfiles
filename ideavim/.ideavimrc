@@ -12,7 +12,7 @@ set easymotion
 let mapleader=" "
 
 "" Actions
-nnoremap \r :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap so :action IdeaVim.ReloadVimRc.reload<CR>
 
 nnoremap <C-n> :action GotoClass<CR>
 nnoremap <C-Shift-n> :action GotoFile<CR>
@@ -34,6 +34,8 @@ inoremap <leader>k <Esc>:m -2<CR>gi
 
 nnoremap <TAB> :action NextTab<CR>
 nnoremap <s-TAB> :action PreviousTab<CR>
+nnoremap gt :action NextTab<CR>
+nnoremap gb :action PreviousTab<CR>
 
 nnoremap <Leader>new :action EditSourceInNewWindow<CR>
 nnoremap <Leader>nw :action NextWindow<CR>
@@ -51,9 +53,9 @@ nnoremap [[ :action MethodUp<CR>
 nnoremap ]] :action MethodDown<CR>
 
 nnoremap zc :action CollapseRegion<CR>
-nnoremap zo :action ExpandRedion<CR>
+nnoremap zo :action ExpandRegion<CR>
 nnoremap <leader>zc :action CollapseAllRegion<CR>
-nnoremap <leader>zo :action ExpandAllRedion<CR>
+nnoremap <leader>zo :action ExpandAllRegion<CR>
 
 nnoremap <leader>r :action Refactorings.QuickListPopupAction<CR>
 nnoremap <Leader>=  :action ReformatCode<CR>
@@ -64,8 +66,8 @@ nnoremap gc :action GotoClass<CR>
 nnoremap gi :action GotoImplementation<CR>
 nnoremap gd :action GotToDeclaration<CR>
 nnoremap gp :action GotToSuperMethod<CR>
-nnoremap gt :action GotoTest<CR>
-nnoremap gb :action Back<CR>
+"nnoremap gt :action GotoTest<CR>
+"nnoremap gb :action Back<CR>
 nnoremap gf :action Forward<CR>
 
 nnoremap <leader>r :action ContextRun<CR>
