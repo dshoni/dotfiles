@@ -30,6 +30,8 @@ set smartindent
 set ignorecase
 set smartcase
 
+nnoremap gb gT
+
 " Включить подсветку синтаксиса
 syntax on
 colo evening
