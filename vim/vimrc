@@ -6,15 +6,14 @@
 "   source /home/dshoni/repos/dotfiles/vim/vimrc
 " endif
 " ===========================================================
-
+echo 
 let mapleader = " "
 " Mapping to reload configuration
 nmap <leader>so :source $HOME/.vimrc<CR>
 
 " start directory
-if system("uname") == "Windows"
+if has("win32")
     :cd C:\Users\Evgeny Bardin
-    highlight lCursor guifg=NONE guibg=Cyan
 
     "default window size
     set lines=30 columns=150
@@ -23,7 +22,7 @@ if system("uname") == "Windows"
     nmap <leader>so :source $HOME\.vimrc<CR>
 endif
 
-
+highlight lCursor guifg=NONE guibg=Cyan
 
 set guifont=Consolas:h11
 set guioptions-=T
