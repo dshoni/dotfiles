@@ -1,13 +1,29 @@
+" ===========================================================
+" add this to $HOME/.vimrc
+"
+" " Source a global configuration file if available
+" if filereadable("/home/dshoni/repos/dotfiles/vim/vimrc")
+"   source /home/dshoni/repos/dotfiles/vim/vimrc
+" endif
+" ===========================================================
+
+let mapleader = " "
+" Mapping to reload configuration
+nmap <leader>so :source $HOME/.vimrc<CR>
 
 " start directory
-:cd C:\Users\Evgeny Bardin
+if system("uname") == "Windows"
+    :cd C:\Users\Evgeny Bardin
+    highlight lCursor guifg=NONE guibg=Cyan
 
-" Mapping to reload configuration
-let mapleader = " "
-nmap <leader>so :source $HOME\.vimrc<CR>
+    "default window size
+    set lines=30 columns=150
+    
+    " Mapping to reload configuration
+    nmap <leader>so :source $HOME\.vimrc<CR>
+endif
 
-"default window size
-set lines=30 columns=150
+
 
 set guifont=Consolas:h11
 set guioptions-=T
@@ -17,7 +33,6 @@ set encoding=utf8
 set keymap=russian-jcukenwin
 set iminsert=0
 set imsearch=0
-highlight lCursor guifg=NONE guibg=Cyan
 
 " Показывать положение курсора всё время.
 set ruler
