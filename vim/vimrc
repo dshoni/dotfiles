@@ -2,11 +2,11 @@
 " add this to $HOME/.vimrc
 "
 " " Source a global configuration file if available
-" if filereadable("/home/dshoni/repos/dotfiles/vim/vimrc")
-"   source /home/dshoni/repos/dotfiles/vim/vimrc
+" if filereadable("/path/to/repodir/dotfiles/vim/vimrc")
+"   source /path/to/repodir/dotfiles/vim/vimrc
 " endif
 " ===========================================================
-echo 
+
 let mapleader = " "
 " Mapping to reload configuration
 nmap <leader>so :source $HOME/.vimrc<CR>
