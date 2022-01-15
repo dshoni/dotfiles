@@ -20,9 +20,10 @@ if has("win32")
     
     " Mapping to reload configuration
     nmap <leader>so :source $HOME\.vimrc<CR>
+    
+    highlight lCursor guifg=NONE guibg=Cyan
+    colo evening
 endif
-
-highlight lCursor guifg=NONE guibg=Cyan
 
 set guifont=Consolas:h11
 set guioptions-=T
@@ -48,7 +49,6 @@ nnoremap gb gT
 
 " Включить подсветку синтаксиса
 syntax on
-colo evening
 
 " delete over line breaks, or automatically-inserted indentation, or the place where insert mode started
 set backspace=indent,eol,start
@@ -66,5 +66,5 @@ set scrolloff=5
 " ==================================
 
 " Specify a directory for plugins
-call plug#begin('~/.vim/plugged')
-call plug#end()
+"call plug#begin('~/.vim/plugged')
+"call plug#end()
