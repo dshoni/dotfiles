@@ -82,7 +82,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # auto-notify: https://github.com/MichaelAquilina/zsh-auto-notify#configuration
 # you-should-use: https://github.com/MichaelAquilina/zsh-you-should-use#requirements
-# zsh-autosuggestions: 
+# zsh-autosuggestions: https://github.com/zsh-users/zsh-autosuggestions
 plugins=(git auto-notify you-should-use zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
@@ -117,3 +117,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 AUTO_NOTIFY_IGNORE+=("docker" "vim")
+
+# load ssh keys
+# ssh-add --apple-load-keychain > /dev/null
